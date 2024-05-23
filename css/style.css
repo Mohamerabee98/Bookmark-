@@ -1,0 +1,83 @@
+:root {
+    --selection-color : #FEC260
+}
+
+body {
+    background-color: #F7ECDE !important;
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-size: 60px !important;
+    color: rgb(53, 46, 40) !important;
+    width: fit-content;
+}
+
+h1::selection {
+    background-color: var(--selection-color);
+}
+label::selection{
+    background-color: var(--selection-color);
+}
+th::selection{
+    background-color: var(--selection-color);
+}
+td::selection{
+    background-color: var(--selection-color);
+}
+input::selection{
+    background-color: var(--selection-color);
+}
+
+
+
+
+
+.main .title::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #FEC260;
+    transition: all .7s;
+    z-index: -1;
+}
+
+.main .title:hover::before {
+    height: 50%;
+}
+
+.bookmarker-body {
+    border-top: #000 dotted 3px;
+    border-bottom: #000 dotted 3px;
+
+}
+
+
+.bookmarker-body h2 {
+    font-family: "Righteous", sans-serif;
+    background-image: linear-gradient(to right, #74B87C, #B4AC49);
+
+    color: transparent;
+    background-clip: text;
+}
+
+.bookmarker-body .green {
+    color: #3FA55B;
+}
+
+.bookmarker-body .sec-color {
+    color: #B2AC4A;
+}
+
+.btn {
+    background-color: #D1512D !important;
+    font-family: "PT Sans Caption", sans-serif !important;
+}
+
+.visit {
+    background-color: #8A9E23 !important;
+}
